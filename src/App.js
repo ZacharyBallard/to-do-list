@@ -1,22 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import List from './components/List'
+import Header from './components/Header'
 
 function App () {
   return (
       <> 
-          <div>
-              <input type="checkbox" id="checkbox1" name="checkbox1"/>
-              <label htmlFor="checkbox1"> checkbox1</label>   
-          </div>
-          <div>
-              <input type="checkbox" id="checkbox2" name="checkbox2"/>
-              <label htmlFor="checkbox2"> checkbox2</label>   
-          </div>
-          <div>
-              <input type="checkbox" id="checkbox3" name="checkbox3"/>
-              <label htmlFor="checkbox3"> checkbox2</label>   
-          </div>
-         
+        <Header/>
+        <List/> 
       </>
   )
 }
