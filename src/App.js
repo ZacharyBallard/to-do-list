@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <> 
+          <div>
+              <input type="checkbox" id="checkbox1" name="checkbox1"/>
+              <label htmlFor="checkbox1"> checkbox1</label>   
+          </div>
+          <div>
+              <input type="checkbox" id="checkbox2" name="checkbox2"/>
+              <label htmlFor="checkbox2"> checkbox2</label>   
+          </div>
+          <div>
+              <input type="checkbox" id="checkbox3" name="checkbox3"/>
+              <label htmlFor="checkbox3"> checkbox2</label>   
+          </div>
+         
+      </>
+  )
 }
 
 export default App;
