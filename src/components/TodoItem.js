@@ -8,8 +8,8 @@ function TodoItem (props) {
         className="checkboxInput" 
         id="checkbox1" 
         name="checkbox1" 
-        checked={props.item.completed} 
-        onChange={() => props.handleChange(props.item.id)}/>
+        onChange={() => props.handleChange(props.item.id)}
+        checked={props.item.completed} />
         <label htmlFor="checkbox1"> {props.item.text} </label> 
       </div>
   )

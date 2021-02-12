@@ -3,7 +3,7 @@ import TodoItem from './components/TodoItem'
 import Header from './components/Header'
 import todosData from './todoData'
 
-class App extends React.Component {
+class App extends Component {
   constructor() {
       super()
       this.state = {
@@ -13,10 +13,14 @@ class App extends React.Component {
   }
   
   handleChange = (id) => {
+    //   console.log(id); verified
       this.setState(prevState => {
           const updatedTodos = prevState.todos.map(todo => {
               if (todo.id === id) {
-                  todo.completed = !todo.completed
+                return {
+                    ...todo,
+                    completed: !todo.completed
+                }
               }
               return todo
           })
