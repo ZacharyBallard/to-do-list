@@ -11,7 +11,7 @@
 .checkbox {
     height: 100px;
     background-color: #333;
-    color: whitesmoke;
+    color: #c3b091;
     border-bottom: white solid 1px;
     text-align: center;
     font-size: 30px;
@@ -30,5 +30,4 @@ input{
     height: 20px;
     width: 20px;
 }
-
 

@@ -1,4 +1,7 @@
 import React from 'react';
+import Clock from 'react-clock';
+import 'react-clock/dist/Clock.css';
+
 
 function Header() {
     const date = new Date()
@@ -21,9 +24,11 @@ function Header() {
       styles.color = "#FBFAF5"
       styles.backgroundColor = "#7f7f7f"
     }
-    
+
     return (
-      <h1 className="headerWelcome" style={styles}>Good {timeOfDay}!</h1>
+      <div>
+        <h1 className="headerWelcome" style={styles}>Good {timeOfDay}! <Clock value={(date)} /></h1>
+      </div>
     )
   }
 
